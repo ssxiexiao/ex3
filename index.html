@@ -32,11 +32,11 @@
 	    </div>
 	</div>
 	<div class="container">
-		<div ng-class="'white'" ng-if="statusId === 1" ng-include="'./template/description1.htm'"></div>
-		<div ng-class="'white'" ng-if="statusId === 2" ng-include="'./template/training.htm'" ng-controller="trainingCtrl"></div>
-		<div ng-class="'white'" ng-if="statusId === 3" ng-include="'./template/description2.htm'"></div>
-		<div ng-class="'white'" ng-if="statusId === 4" ng-include="'./template/userStudy.htm'" ng-controller="userStudyCtrl"></div>
-		<div ng-if="statusId === 5" ng-include="'./template/information.htm'" ng-controller="infoCtrl"></div>
-		<div ng-if="statusId === 6" ng-include="'./template/end.htm'"></div>
+		<div ng-class="'white'" ng-show="statusId === 1" ng-include="'./template/description1.htm'"></div>
+		<div ng-class="'white'" ng-show="statusId === 2" ng-include="'./template/training.htm'" ng-controller="trainingCtrl"></div>
+		<div ng-class="'white'" ng-show="statusId === 3" ng-include="'./template/description2.htm'"></div>
+		<div ng-class="'white'" ng-show="statusId === 4" ng-include="'./template/userStudy.htm'" ng-controller="userStudyCtrl"></div>
+		<div ng-show="statusId === 5" ng-include="'./template/information.htm'" ng-controller="infoCtrl"></div>
+		<div ng-show="statusId === 6" ng-include="'./template/end.htm'"></div>
 	</div>
 </body>

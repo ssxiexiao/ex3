@@ -30,6 +30,10 @@ var drawChrod = function(svg, w, angle, scale, rotateStatus, scaleSize) {
 		document.getElementById('answer').focus();
 		document.getElementById('answer').click();
 	}
+	if(document.getElementById('training')){
+		document.getElementById('training').focus();
+		document.getElementById('training').click();
+	}
 	anchorStatus = 0;
 	centerStatus = 0;
 	circleStatus = 1;

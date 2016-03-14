@@ -16,7 +16,7 @@
         <div class="col-xs-10 col-sm-offset-2 tb">
         	<tr>
             	<span class="td name">{{htmlContent['description'][LANG]['train_answer']}}</span>
-	        	<input class="td input" type="number" pattern="[0-9]*" inputmode="numeric" ng-model="train.answer" ng-keydown="keydown($event)">
+	        	<input id="training" class="td input" type="number" pattern="[0-9]*" inputmode="numeric" ng-model="train.answer" ng-keydown="keydown($event)">
 	        	<span class="td white" style="width:40%;">%</span>
 	        </tr>
         </div>

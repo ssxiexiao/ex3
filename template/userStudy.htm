@@ -20,7 +20,7 @@
         </div>
         <div class="row">
         	<div class="col-sm-offset-2">
-        		<div chord-chart chart-indice="userStudy.indice" chart-data="getData" chart-width="0.5" rotate-status="yes"></div>
+        		<div chord-chart chart-indice="userStudy.indice" chart-data="getData" chart-width="0.7" rotate-status="yes"></div>
         	</div>
         </div>      
         <div class="row">
@@ -35,7 +35,7 @@
         </div>
         <div class="row">  
         	<div class="col-xs-9 col-sm-offset-2 tb">
-                <button style="display:inline-block" ng-show="userStudy.indice > 0" class="btn btn-success col-sm-offset-0" ng-click="prev()">
+                <button style="display:inline-block" ng-show="userStudy.indice > 1" class="btn btn-success col-sm-offset-0" ng-click="prev()">
                     {{htmlContent['description'][LANG]['userstudy_prev']}}
                 </button>	            
                 <button style="display:inline-block" ng-show="userStudy.indice < userStudy.number" class="btn btn-success col-sm-offset-8" ng-click="next()">

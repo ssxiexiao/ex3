@@ -1,22 +1,20 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-offset-2">
-            <h5>{{htmlContent['description'][LANG]['train_title']}}</h5>
+            <h5 style="display: inline-block;">{{htmlContent['description'][LANG]['train_title']}}</h5>
+            <span class="col-sm-offset-2">{{train.indice}}</span>
         </div>
     </div>
     <div class="row">
-        <span class="col-sm-offset-2">{{train.indice}}</span>
-    </div>
-    <div class="row">
     	<div class="col-sm-offset-2">
-    		<div chord-chart chart-indice="train.indice" chart-data="getData" chart-width="0.7" rotate-status="yes"></div>
+    		<div chord-chart chart-indice="train.indice" chart-data="getData" chart-width="0.6" rotate-status="yes"></div>
     	</div>
     </div>
     <div class="row">
         <div class="col-xs-10 col-sm-offset-2 tb">
         	<tr>
             	<span class="td name">{{htmlContent['description'][LANG]['train_answer']}}</span>
-	        	<input id="training" class="td input" type="number" pattern="[0-9]*" inputmode="numeric" ng-model="train.answer" ng-keydown="keydown($event)">
+	        	<input autofocus="autofocus" id="training" class="td input" type="number" pattern="[0-9]*" inputmode="numeric" ng-model="train.answer" ng-keydown="keydown($event)">
 	        	<span class="td white" style="width:40%;">%</span>
 	        </tr>
         </div>

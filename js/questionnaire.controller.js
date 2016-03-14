@@ -53,6 +53,8 @@ angular.module('exCtrl',[])
 		};
 		$scope.next = function() {
 			$scope.train.counter += 1;
+			document.getElementById('training').focus();
+			document.getElementById('training').click();
 			if($scope.train.counter === 1){
 				$scope.train.dataVisible = 1;
 				return;
@@ -263,7 +265,6 @@ angular.module('exCtrl',[])
 				$scope.info.choices[indice].push(tmp);
 			}
 		}
-		console.log($scope.info.choices);
 		$scope.submit = function(){
 			$scope.info.favourite = [];
 			$scope.info.accurate = [];

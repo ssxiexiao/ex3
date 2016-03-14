@@ -27,10 +27,12 @@ angular.module('exDirective',[])
 	});
 var drawChrod = function(svg, w, angle, scale, rotateStatus, scaleSize) {
 	if(document.getElementById('answer')){
+		console.log('11111111111');
 		document.getElementById('answer').focus();
 		document.getElementById('answer').click();
 	}
 	if(document.getElementById('training')){
+		console.log('2222222222');
 		document.getElementById('training').focus();
 		document.getElementById('training').click();
 	}
@@ -39,7 +41,7 @@ var drawChrod = function(svg, w, angle, scale, rotateStatus, scaleSize) {
 	circleStatus = 1;
 	svg.attr('width', w)
 		.attr('height', w);
-	var padding = 30,
+	var padding = 0,
 		width = 1000;
 	var maxSize = 1.0, minSize = 5.5/9.7;
 	var sizeRange = (maxSize - minSize) / 4;

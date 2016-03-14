@@ -31,7 +31,7 @@ angular.module('exCtrl',[])
 			if($scope.statusId === 1){
 				RecordService.getDataFromServer($scope.data.id);
 			}
-			$scope.statusId += 4;
+			$scope.statusId += 1;
 		};
 		$scope.$watch(function(){ return RecordService.getUploadStatus();}, function(newValue){
 			if(newValue === true){

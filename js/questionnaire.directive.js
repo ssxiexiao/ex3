@@ -43,7 +43,7 @@ var drawChrod = function(svg, w, angle, scale, rotateStatus, scaleSize) {
 		.attr('height', w);
 	var padding = 0,
 		width = 1000;
-	var maxSize = 1.0, minSize = 5.5/9.7;
+	var maxSize = 1.0, minSize = 4/9.7;
 	var sizeRange = (maxSize - minSize) / 4;
 	console.log(minSize + sizeRange * scaleSize);
 	var px = ((w/2) - padding) * (minSize + sizeRange * scaleSize);
